@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/saveEdit"
+    >
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:text="Notepad"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textViewSaveUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="#3C4E68"
+        android:gravity="center"
+        android:text="Save"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextMlItem"
+        android:layout_width="match_parent"
+        android:layout_height="457dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="?android:attr/listDivider"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="127dp"
+            android:layout_height="51dp"
+            android:background="@color/my_theme_color"
+            android:backgroundTint="@color/my_theme_color"
+            android:text="Back"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="127dp"
+            android:layout_height="51dp"
+            android:background="@color/my_theme_color"
+            android:backgroundTint="@color/my_theme_color"
+            android:text="Save"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
